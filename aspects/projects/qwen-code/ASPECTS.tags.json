@@ -1,0 +1,250 @@
+{
+  "tags": [
+    {
+      "tag": "automation",
+      "scope": "Build, release, and repository maintenance scripts",
+      "comment": "For aspects about node scripts we use automation, versions, telemetry and sandbox utilities.",
+      "number_of_references": 32
+    },
+    {
+      "tag": "build-system",
+      "scope": "Building, packaging and publishing Qwen Code",
+      "comment": "We use scripts/build.js, build_sandbox.js, Dockerfile and other build pipelines for aspects.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "chat-engine",
+      "scope": "Dialogue engine and interaction with models",
+      "comment": "We use it for aspects that describe the orchestration of chat sessions and content generators.",
+      "number_of_references": 46
+    },
+    {
+      "tag": "chat-logging",
+      "scope": "Recording, serializing and exporting chat history",
+      "comment": "We bet on aspects about saving conversations, exporting tokens and associated files in ~/.gemini/tmp.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "cli-commands",
+      "scope": "CLI commands (slash commands, auxiliary dialogs, handlers).",
+      "comment": "We use it for aspects that describe slash commands, the command framework and related interactions in the terminal UI.",
+      "number_of_references": 61
+    },
+    {
+      "tag": "cli-config",
+      "scope": "CLI Configuration Layers and Settings Management",
+      "comment": "For aspects about downloading and migration, we use settings, trusted folders, an extension directory and auxiliary configuration utilities.",
+      "number_of_references": 39
+    },
+    {
+      "tag": "cli-runtime",
+      "scope": "The main thread for launching the Qwen Code CLI",
+      "comment": "We use it for aspects that deal with initialization, restarts, and processing of CLI flags.",
+      "number_of_references": 102
+    },
+    {
+      "tag": "cli-ui",
+      "scope": "Terminal UI and Ink CLI components",
+      "comment": "We use TUI dialogs, hooks and visual elements for aspects that describe App.tsx.",
+      "number_of_references": 179
+    },
+    {
+      "tag": "code-assist",
+      "scope": "Integration with Code Assist server and IDE proxy",
+      "comment": "We use server, OAuth and IDE connectors for the code-assist aspects.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "context-management",
+      "scope": "History, memory and context compression management",
+      "comment": "We focus on aspects about storing history, compression, including the IDE/directory in the tooltip.",
+      "number_of_references": 52
+    },
+    {
+      "tag": "core-config",
+      "scope": "Central configuration and registration of kernel services",
+      "comment": "Used for aspects that describe the Config class and associated extension points.",
+      "number_of_references": 27
+    },
+    {
+      "tag": "core-engine",
+      "scope": "Basic kernel parameters and common constants for content generators",
+      "comment": "We use it for aspects that describe core constants, timeout policies, and configuration that affects the operation of content generators and services.",
+      "number_of_references": 16
+    },
+    {
+      "tag": "core-services",
+      "scope": "Qwen Code core services providing infrastructure functions",
+      "comment": "We mark aspects about ShellExecutionService, GitService, FileDiscovery and other services from packages/core/src/services.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "core-tools",
+      "scope": "Declarative tools implemented in packages/core/src/tools",
+      "comment": "We use it for aspects that describe specific tools (shell, read-file, web-search, etc.) and the ToolRegistry infrastructure.",
+      "number_of_references": 61
+    },
+    {
+      "tag": "core-utils",
+      "scope": "Core utilities that provide support services and security",
+      "comment": "We mark common core helpers: retry, error handling, file search and tokenizers.",
+      "number_of_references": 54
+    },
+    {
+      "tag": "documentation",
+      "scope": "Documentation and manuals supported by current workflows",
+      "comment": "We use it for aspects that summarize official instructions on architecture, sandbox, telemetry, checkpointing and repository automation.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "file-io",
+      "scope": "File read and write operations in the kernel",
+      "comment": "We use for aspects about standard implementations of FileSystemService, write/read tools, etc.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "file-scanning",
+      "scope": "Project scanning and path filtering",
+      "comment": "We use it for aspects about FileDiscoveryService, ignoring and file system bypass.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "git",
+      "scope": "Git integration and checkpoint management",
+      "comment": "We use for aspects about GitService, shadow repository and commit logging.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "ide-integration",
+      "scope": "Integration of IDE components (VSCode companion, MCP server, IDE context)",
+      "comment": "We use it for aspects that describe IDE plugins and their interaction with the Qwen Code core/CLI.",
+      "number_of_references": 24
+    },
+    {
+      "tag": "integration-tests",
+      "scope": "Integration scenarios and Terminal Bench",
+      "comment": "We use it to describe integration tests, Terminal Bench configurations and auxiliary scripts.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "linting",
+      "scope": "ESLint, Prettier and other static quality checks",
+      "comment": "For aspects about eslint.config.js, custom rules and npm lint scripts are used.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "loop-detection",
+      "scope": "Detect response loops and tool repetitions",
+      "comment": "We add aspects that describe LoopDetectionService and related telemetry events.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "macos",
+      "scope": "Specifics of launch and restrictions on macOS",
+      "comment": "We mark aspects that describe seatbelt profiles, permissions and other nuances of the macOS environment.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "mcp",
+      "scope": "Model Context Protocol integration and MCP client management",
+      "comment": "We note aspects about MCP tools, storing OAuth tokens and calling remote MCP services.",
+      "number_of_references": 32
+    },
+    {
+      "tag": "memory",
+      "scope": "Long-term memory and fact management",
+      "comment": "We use the commands about /memory, discovery and memory import for aspects.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "metrics",
+      "scope": "Catalog of metrics and events for analytics",
+      "comment": "We use telemetry/metrics.ts, tool-call-decision and other counters for aspects.",
+      "number_of_references": 24
+    },
+    {
+      "tag": "openai",
+      "scope": "Integration with OpenAI and compatible providers",
+      "comment": "We focus on aspects about the OpenAI content generator, providers and adapters.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "packaging",
+      "scope": "Preparing artifacts and metadata for npm publishing",
+      "comment": "We add aspects about prepare-package and copying licenses/README into packages.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "privacy",
+      "scope": "Privacy Policies and Managing User Data Collection Options",
+      "comment": "We use it for aspects about privacy notice, opt-in flows and telemetry switches in the CLI.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "prompting",
+      "scope": "System and user prompts, instructions for models",
+      "comment": "For aspects about the formation, we use system prompt, user instructions and logic for preparing the context before sending it to the model.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "qwen-auth",
+      "scope": "Qwen authorization flow and OAuth token management",
+      "comment": "We note aspects about Qwen OAuth2, storing/updating tokens and integration with Qwen providers.",
+      "number_of_references": 24
+    },
+    {
+      "tag": "sandboxing",
+      "scope": "Running in sandbox containers and environment restrictions",
+      "comment": "We mark the aspects that control the transition to the sandbox and the configuration of containers.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "search",
+      "scope": "Workspace full-text search tools and services",
+      "comment": "We focus on aspects about ripGrep, glob and other search operations.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "security",
+      "scope": "Security, OAuth and Access Control",
+      "comment": "We use it for aspects about storing tokens, sandboxing and checking rights.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "shell",
+      "scope": "Working with shell commands and the terminal",
+      "comment": "We use for aspects about ShellExecutionService, shell tool and pty management.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "subagents",
+      "scope": "Managing subagents, their configuration and events",
+      "comment": "We focus on aspects about the Task tool, SubagentManager and subagent telemetry.",
+      "number_of_references": 43
+    },
+    {
+      "tag": "telemetry",
+      "scope": "Collecting, buffering and sending telemetry",
+      "comment": "We use for aspects about SDK, loggers and telemetry exporters.",
+      "number_of_references": 30
+    },
+    {
+      "tag": "testing",
+      "scope": "Integration and load test infrastructure",
+      "comment": "We use Vitest configuration, global setup and terminal benchmarks for aspects.",
+      "number_of_references": 130
+    },
+    {
+      "tag": "theming",
+      "scope": "CLI themes and semantic palettes",
+      "comment": "For aspects we use the Theme class, built-in palettes and semantic colors that affect Ink/Markdown design.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "web",
+      "scope": "HTTP and external web API calls",
+      "comment": "We use web-fetch, web-search and other network tools for aspects.",
+      "number_of_references": 4
+    }
+  ]
+}

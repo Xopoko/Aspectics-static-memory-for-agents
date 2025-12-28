@@ -1,0 +1,220 @@
+{
+  "tags": [
+    {
+      "tag": "agent-command",
+      "scope": "Slash commands and scripts that control agent actions",
+      "comment": "We use it for markdown commands that orchestrate git, reviews, and other step-by-step procedures.",
+      "number_of_references": 108
+    },
+    {
+      "tag": "agent-instructions",
+      "scope": "System prompts and agent playbooks",
+      "comment": "We mark instructions for specialized agents (architect, reviewer, tester, etc.).",
+      "number_of_references": 85
+    },
+    {
+      "tag": "agent-runtime",
+      "scope": "Meta information about agents: model, profile, available tools",
+      "comment": "We use it for aspects that describe the runtime configuration of agents (model, color, allowed tools).",
+      "number_of_references": 25
+    },
+    {
+      "tag": "agent-sdk",
+      "scope": "Claude Agent SDK Tools and Processes",
+      "comment": "We use it for aspects that help create and test applications on the Agent SDK.",
+      "number_of_references": 49
+    },
+    {
+      "tag": "bun",
+      "scope": "Scripts that require Bun runtime",
+      "comment": "Used for aspects that run TypeScript/JavaScript via `#!/usr/bin/env bun`.",
+      "number_of_references": 17
+    },
+    {
+      "tag": "claude-bot",
+      "scope": "GitHub automation responding to @claude requests",
+      "comment": "We use it for workflows and pipelines that are launched when users mention the Claude bot in issues or comments.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "code-review",
+      "scope": "Review of code and quality of changes",
+      "comment": "We tag agents, teams, and practitioners evaluating PR and code changes.",
+      "number_of_references": 45
+    },
+    {
+      "tag": "devcontainer",
+      "scope": "Settings `.devcontainer`, Dockerfile and bootstrap environment",
+      "comment": "Denotes aspects about development container configuration and startup automation.",
+      "number_of_references": 49
+    },
+    {
+      "tag": "documentation",
+      "scope": "Official documentation and user instructions",
+      "comment": "We use it for READMEs, guides, and policies that developers need to know.",
+      "number_of_references": 31
+    },
+    {
+      "tag": "duplicate-triage",
+      "scope": "Processes for finding and closing duplicates GitHub issues",
+      "comment": "We bet on teams and pipelines that identify, flag and close duplicates, including retrospective runs.",
+      "number_of_references": 40
+    },
+    {
+      "tag": "editor",
+      "scope": "Editor and IDE Configurations",
+      "comment": "We highlight recommendations for extensions, VS Code settings, and other IDE tools.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "error-handling",
+      "scope": "Practices for handling errors and fallbacks",
+      "comment": "We use it for aspects that analyze try/catch, alerts, and silent error prevention.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "examples",
+      "scope": "Examples of hook scripts and integrations",
+      "comment": "We mark training examples and demo scripts from the catalog `examples`.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "feature-dev",
+      "scope": "Feature development processes via Claude",
+      "comment": "We use it for agents and teams supporting multi-stage feature development.",
+      "number_of_references": 40
+    },
+    {
+      "tag": "git-workflow",
+      "scope": "Automating Git Operations from Claude",
+      "comment": "We use it for plugins and commands that manage branches, commits and PRs via git/gh.",
+      "number_of_references": 22
+    },
+    {
+      "tag": "github-actions",
+      "scope": "GitHub Actions and workflow pipelines",
+      "comment": "Used to describe `.github/workflows`, schedules and action configurations.",
+      "number_of_references": 47
+    },
+    {
+      "tag": "github-automation",
+      "scope": "GitHub API Automation Scripts",
+      "comment": "We mark utilities that triage issues, run workflows, or write to GitHub via the API.",
+      "number_of_references": 57
+    },
+    {
+      "tag": "hooks",
+      "scope": "Hook configurations Claude Code",
+      "comment": "We mark JSON and scripts that register Pre/PostToolUse hooks.",
+      "number_of_references": 24
+    },
+    {
+      "tag": "issue-template",
+      "scope": "Templates GitHub issues",
+      "comment": "We use it for YAML forms that structure user requests.",
+      "number_of_references": 26
+    },
+    {
+      "tag": "legal",
+      "scope": "Legal requirements and licensing",
+      "comment": "We record documents describing the terms of use and license restrictions.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "mcp",
+      "scope": "Model Context Protocol and MCP server configuration",
+      "comment": "Used for aspects where Claude runs MCP servers or tools.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "network-security",
+      "scope": "Network policies and outgoing traffic restrictions",
+      "comment": "We use it for recording about firewall, iptables/ipset and other network limiters.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "observability",
+      "scope": "Logs, metrics and automation diagnostics",
+      "comment": "We use it for aspects that describe debug logs, status codes and other signals that help operators monitor the operation of pipelines.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "plugins",
+      "scope": "Claude Code plugins and their packaging",
+      "comment": "We note aspects about the marketplace, the structure of plugins and their categories.",
+      "number_of_references": 48
+    },
+    {
+      "tag": "powershell",
+      "scope": "PowerShell utilities",
+      "comment": "We mark PowerShell scripts that serve development or infrastructure.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "pr-review",
+      "scope": "End-to-end pull request checks",
+      "comment": "We highlight teams, plugins, and agents that provide multi-faceted pre-merger PR visibility.",
+      "number_of_references": 52
+    },
+    {
+      "tag": "privacy",
+      "scope": "Privacy Policy and Data Storage",
+      "comment": "Use for records of collection, storage, and processing guarantees of user data.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "quality-safety",
+      "scope": "Checks for hidden risks and degradations",
+      "comment": "We use it for agents that cover test gaps, silent failures, and other qualities that prevent regressions.",
+      "number_of_references": 41
+    },
+    {
+      "tag": "security-hooks",
+      "scope": "Tools that block unsafe edits",
+      "comment": "We use it for pre-tool hooks and automatic reminders about safe practices.",
+      "number_of_references": 27
+    },
+    {
+      "tag": "security-policy",
+      "scope": "Disclosure procedures and security policies",
+      "comment": "We use it for regulations on vulnerability reporting and interaction with HackerOne.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "statsig",
+      "scope": "Integrations with Statsig events API",
+      "comment": "We use it for logging metrics and telemetry via Statsig.",
+      "number_of_references": 17
+    },
+    {
+      "tag": "testing",
+      "scope": "Test coverage and quality checks",
+      "comment": "We mark agents and practitioners who analyze tests, coverage and quality of checks.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "tool-guardrails",
+      "scope": "Limitations and allowlist of tools in teams and workflow",
+      "comment": "We mark aspects documenting allowed commands and prohibitions of ToolUse for slash commands and automations.",
+      "number_of_references": 22
+    },
+    {
+      "tag": "triage",
+      "scope": "Automation of triage and issue classification",
+      "comment": "We note aspects that classify/tag incoming tickets.",
+      "number_of_references": 30
+    },
+    {
+      "tag": "type-systems",
+      "scope": "Design of types and contracts",
+      "comment": "We use for aspects that evaluate type design, invariants and encapsulation.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "vscode",
+      "scope": "Specific settings and automation of Visual Studio Code",
+      "comment": "We use it for aspects about extensions, parameters and integration of VS Code with devcontainer.",
+      "number_of_references": 12
+    }
+  ]
+}

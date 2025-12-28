@@ -1,0 +1,634 @@
+{
+  "tags": [
+    {
+      "tag": "accounts",
+      "scope": "Accounts",
+      "comment": "Aspects about user accounts and affiliation.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "actions",
+      "scope": "GitHub Actions",
+      "comment": "We use it for aspects that describe GitHub Actions workflow or steps.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "agents",
+      "scope": "Agent directory",
+      "comment": "Logic for defining and combining opencode agents.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "analytics",
+      "scope": "Analytics",
+      "comment": "Collect and report usage metrics.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "api",
+      "scope": "Web APIs and integration handlers",
+      "comment": "Used to describe HTTP services and endpoints.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "architecture",
+      "scope": "High-level design of the project",
+      "comment": "We use it for aspects about the general structure and framework of systems.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "astro",
+      "scope": "Astro sites",
+      "comment": "Deployment and configuration of Astro projects.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "auth",
+      "scope": "Authentication and Authorization Mechanisms",
+      "comment": "We use it for aspects describing auth providers and access policies.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "automation",
+      "scope": "Automation",
+      "comment": "Scenarios and pipelines without human intervention.",
+      "number_of_references": 107
+    },
+    {
+      "tag": "automation-diagnostics",
+      "scope": "Automated diagnostics",
+      "comment": "Scripts and commands that check the environment/state automatically.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "billing",
+      "scope": "Billing",
+      "comment": "Balance, payments and limits for workspaces.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "bun",
+      "scope": "Bun runtime and tools",
+      "comment": "We note the use of bun in configuration and scripts.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "cache",
+      "scope": "Caching",
+      "comment": "Managing caches and clearing them.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "ci",
+      "scope": "Continuous Integration",
+      "comment": "CI steps and processes.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "cli",
+      "scope": "Command Line Interfaces",
+      "comment": "We use it for aspects about the CLI and commands.",
+      "number_of_references": 188
+    },
+    {
+      "tag": "cli-templates",
+      "scope": "CLI templates",
+      "comment": "Tag for CLI template commands and associated guides.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "client",
+      "scope": "SDK client",
+      "comment": "Adapters that provide client access to the API.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "cloudflare",
+      "scope": "Cloudflare Resources and Configurations",
+      "comment": "We use it for workers, KV, Durable Objects and Cloudflare domains.",
+      "number_of_references": 22
+    },
+    {
+      "tag": "concurrency",
+      "scope": "Access synchronization",
+      "comment": "Mechanisms of blocking and competitive access.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "config",
+      "scope": "Configuration",
+      "comment": "Loading and merging configuration files.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "console",
+      "scope": "Admin or user console",
+      "comment": "We use it for aspects of the project's web console.",
+      "number_of_references": 132
+    },
+    {
+      "tag": "context",
+      "scope": "Execution context",
+      "comment": "Passing actor/user in handlers.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "css",
+      "scope": "CSS modules",
+      "comment": "CSS modules and global styles of the console, share and design systems.",
+      "number_of_references": 47
+    },
+    {
+      "tag": "data",
+      "scope": "Data model",
+      "comment": "Schemas and data storage layer.",
+      "number_of_references": 24
+    },
+    {
+      "tag": "debug",
+      "scope": "Debugging tools",
+      "comment": "We include aspects about debug commands, diagnostic utilities and output of service paths.",
+      "number_of_references": 12
+    },
+    {
+      "tag": "design-system",
+      "scope": "Design system",
+      "comment": "Global tokens, components and styles of the project design system.",
+      "number_of_references": 38
+    },
+    {
+      "tag": "desktop",
+      "scope": "Desktop builds and distribution",
+      "comment": "We note aspects about the desktop web client and its deployment.",
+      "number_of_references": 42
+    },
+    {
+      "tag": "distribution",
+      "scope": "Distribution",
+      "comment": "Installing and updating opencode binaries.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "dns",
+      "scope": "DNS and domain configurations",
+      "comment": "We use it for aspects that manage domains and zones.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "docs",
+      "scope": "Documentation",
+      "comment": "Hosting and documentation build.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "drizzle",
+      "scope": "Drizzle ORM",
+      "comment": "Circuits and utilities implemented on Drizzle.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "durable-object",
+      "scope": "Cloudflare Durable Objects",
+      "comment": "Apply when the aspect describes a Durable Object or interaction with it.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "email",
+      "scope": "Mail notifications",
+      "comment": "We note sending letters, templates and SMTP/SES integration.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "filesystem",
+      "scope": "File system",
+      "comment": "Directory structure and access rights.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "formatting",
+      "scope": "Formatting",
+      "comment": "Automatic formatting and style-fix.",
+      "number_of_references": 0
+    },
+    {
+      "tag": "github",
+      "scope": "GitHub integrations",
+      "comment": "We use it for GitHub App, API and tokens.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "go",
+      "scope": "Go",
+      "comment": "Components and SDK in Go language.",
+      "number_of_references": 139
+    },
+    {
+      "tag": "honeycomb",
+      "scope": "Honeycomb",
+      "comment": "Integrations with Honeycomb for telemetry.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "http",
+      "scope": "HTTP settings",
+      "comment": "Configuring transports, headers and middleware for HTTP clients.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "infrastructure",
+      "scope": "Cloud infrastructure and providers",
+      "comment": "We note aspects about IaC, providers and environments.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "install",
+      "scope": "Installation",
+      "comment": "Scripts or instructions for installing opencode.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "integration",
+      "scope": "Integrations",
+      "comment": "Interaction with external services.",
+      "number_of_references": 29
+    },
+    {
+      "tag": "javascript",
+      "scope": "JavaScript/TypeScript",
+      "comment": "JS/TS SDK and bindings.",
+      "number_of_references": 17
+    },
+    {
+      "tag": "keys",
+      "scope": "API keys and tokens",
+      "comment": "Services, schemes and UI for issuing and managing access keys.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "logging",
+      "scope": "Logging and Observability",
+      "comment": "We use it when the component configures or uses logging.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "lsp",
+      "scope": "Language Server Protocol",
+      "comment": "Setting up and managing LSP servers.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "lsp-backend",
+      "scope": "LSP backend",
+      "comment": "Server components and tools serving LSP.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "markdown",
+      "scope": "Markdown processing",
+      "comment": "Parsers, renderers and customization of markdown content.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "marketing",
+      "scope": "Marketing landing pages",
+      "comment": "Pages and components that support product marketing.",
+      "number_of_references": 32
+    },
+    {
+      "tag": "mcp",
+      "scope": "Model Context Protocol",
+      "comment": "Support for MCP commands and clients.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "metrics",
+      "scope": "Metrics",
+      "comment": "Collect and publish operational metrics.",
+      "number_of_references": 0
+    },
+    {
+      "tag": "model-catalog",
+      "scope": "Model catalog",
+      "comment": "We use it for aspects that collect and publish lists of models.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "models",
+      "scope": "Catalogs and model configurations",
+      "comment": "We note aspects of working with lists of models and providers.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "observability",
+      "scope": "Observability",
+      "comment": "Logging, tracing and monitoring.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "openapi",
+      "scope": "OpenAPI",
+      "comment": "Generating or using OpenAPI specifications.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "permissions",
+      "scope": "Permissions",
+      "comment": "Requests and responses to user permissions.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "planetscale",
+      "scope": "Planetscale Databases",
+      "comment": "We note aspects affecting Planetscale clusters and branches.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "plugins",
+      "scope": "Plugins",
+      "comment": "Loading and running opencode plugins.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "prompt",
+      "scope": "Prompts",
+      "comment": "Assembly of system or user prompts.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "prompt-builder",
+      "scope": "Generating hints",
+      "comment": "We note the subsystems that form prompts for agents and automation.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "providers",
+      "scope": "Model Providers",
+      "comment": "Configuration and accounting of LLM providers.",
+      "number_of_references": 30
+    },
+    {
+      "tag": "provisioning",
+      "scope": "Provisioning",
+      "comment": "Allocation and initialization of resources (workspace, billing, keys).",
+      "number_of_references": 1
+    },
+    {
+      "tag": "r2",
+      "scope": "Cloudflare R2",
+      "comment": "Working with R2 storage.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "realtime",
+      "scope": "Real time",
+      "comment": "Live streaming of events and responses.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "release",
+      "scope": "Releases",
+      "comment": "Formation of releases and versions.",
+      "number_of_references": 17
+    },
+    {
+      "tag": "routing",
+      "scope": "Routing",
+      "comment": "Routes, redirects and HTTP request handlers for the console and marketing pages.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "runtime",
+      "scope": "CLI execution and session synchronization",
+      "comment": "We use it for aspects describing runtime cycles, sharing and synchronization.",
+      "number_of_references": 165
+    },
+    {
+      "tag": "schema",
+      "scope": "Data Schemas",
+      "comment": "Types and structures of data in storages.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "sdk",
+      "scope": "SDK",
+      "comment": "Client libraries and extensions.",
+      "number_of_references": 91
+    },
+    {
+      "tag": "secrets",
+      "scope": "Managing secrets",
+      "comment": "We use it for aspects that describe secrets and their bindings.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "security",
+      "scope": "Safety",
+      "comment": "Aspects about secrets, access checks and API protection.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "sessions",
+      "scope": "Sessions",
+      "comment": "Session management and storage.",
+      "number_of_references": 55
+    },
+    {
+      "tag": "share",
+      "scope": "Public viewing of sessions",
+      "comment": "Web viewer components and logic for session sharing.",
+      "number_of_references": 34
+    },
+    {
+      "tag": "slack",
+      "scope": "Slack",
+      "comment": "Slack integrations and bots.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "snapshot",
+      "scope": "Pictures",
+      "comment": "Snapshots and rollbacks.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "solidjs",
+      "scope": "SolidJS",
+      "comment": "SolidJS components and contexts.",
+      "number_of_references": 12
+    },
+    {
+      "tag": "speech",
+      "scope": "Speech and voice input",
+      "comment": "We use it for aspects that work with speech recognition or synthesis.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "sst",
+      "scope": "SST configurations",
+      "comment": "Apply to aspects describing the use of SST.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "static-site",
+      "scope": "Static sites and builds",
+      "comment": "We use it for deployment aspects of static frontends.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "storage",
+      "scope": "Storage",
+      "comment": "Local or remote storage.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "stripe",
+      "scope": "Stripe integration",
+      "comment": "We note the processing of Stripe hooks and keys.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "summary",
+      "scope": "Summaries",
+      "comment": "LLM-company and summing up.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "sync",
+      "scope": "Synchronization",
+      "comment": "State synchronization between clients.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "terminal-app",
+      "scope": "Opencode terminal client",
+      "comment": "We group the aspects that support the launch and interaction of TUI (CLI/TUI bridges, application core).",
+      "number_of_references": 90
+    },
+    {
+      "tag": "terminal-bridge",
+      "scope": "Communication CLI  TUI",
+      "comment": "We use it for aspects that bridge the CLI and the terminal client.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "terminal-clipboard",
+      "scope": "Clipboard in terminal",
+      "comment": "We use it for aspects that read/write the system clipboard from TUI.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "terminal-input",
+      "scope": "Processing terminal input",
+      "comment": "Code parsing escape sequences, keys and mouse in the terminal.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "terminal-render",
+      "scope": "Rendering TUI interface",
+      "comment": "Components and styles that form the visual elements of the terminal UI.",
+      "number_of_references": 36
+    },
+    {
+      "tag": "testing",
+      "scope": "Testing",
+      "comment": "Unit, integration tests and testing infrastructure.",
+      "number_of_references": 41
+    },
+    {
+      "tag": "theme",
+      "scope": "Topics",
+      "comment": "Switch themes and palettes.",
+      "number_of_references": 33
+    },
+    {
+      "tag": "todo",
+      "scope": "Tasks",
+      "comment": "Tracking tasks and todos.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "tooling",
+      "scope": "Tooling",
+      "comment": "Developer Tools.",
+      "number_of_references": 77
+    },
+    {
+      "tag": "tui",
+      "scope": "Terminal UI",
+      "comment": "Text user interface.",
+      "number_of_references": 105
+    },
+    {
+      "tag": "tui-logging",
+      "scope": "TUI logging",
+      "comment": "Components that send logs from the terminal client.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "tui-shell-ui",
+      "scope": "UI shell TUI",
+      "comment": "Components and utilities that control the TUI visual shell.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "ui",
+      "scope": "UI",
+      "comment": "User interface components.",
+      "number_of_references": 153
+    },
+    {
+      "tag": "upgrade",
+      "scope": "Tools and distribution updates",
+      "comment": "We use it for aspects that describe update logic or installation managers.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "users",
+      "scope": "Users",
+      "comment": "User accounts and profiles.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "vscode",
+      "scope": "VS Code",
+      "comment": "VS Code integrations and extensions.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "web",
+      "scope": "Web interfaces",
+      "comment": "Components and layouts of public web applications and viewers.",
+      "number_of_references": 40
+    },
+    {
+      "tag": "websocket",
+      "scope": "WebSocket connections",
+      "comment": "Routes and handlers that open WebSocket subscriptions.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "workflow",
+      "scope": "Workflows",
+      "comment": "Orchestration of processes and pipelines.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "workflow-config",
+      "scope": "Setting up workflow",
+      "comment": "Configuration commands that prepare command directories and scripts.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "workspace",
+      "scope": "Workspaces",
+      "comment": "Selecting and managing workspaces.",
+      "number_of_references": 86
+    },
+    {
+      "tag": "yargs",
+      "scope": "Yargs and the CLI declaration",
+      "comment": "We use it for aspects that describe the CLI on yargs.",
+      "number_of_references": 1
+    }
+  ]
+}

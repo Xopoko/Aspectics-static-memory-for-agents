@@ -1,0 +1,292 @@
+{
+  "tags": [
+    {
+      "tag": "analytics",
+      "scope": "Collection and processing of telemetry, opt-in and usage events.",
+      "comment": "Use for aspects describing PostHog/analytics options and CLI events.",
+      "number_of_references": 56
+    },
+    {
+      "tag": "automation",
+      "scope": "Automated actions that Aider performs for the user.",
+      "comment": "Commits, message generation and other automatic operations.",
+      "number_of_references": 69
+    },
+    {
+      "tag": "caching",
+      "scope": "Local caches and data reuse strategies.",
+      "comment": "File caches, TTL, storage of model metadata.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "chat",
+      "scope": "Organization of the chat cycle and user interaction.",
+      "comment": "Use for aspects about the message cycle, pre/post processing, placeholders, reflection.",
+      "number_of_references": 19
+    },
+    {
+      "tag": "cli",
+      "scope": "Launch command interface and its user flags.",
+      "comment": "Argument parsing, watch modes, main CLI structure.",
+      "number_of_references": 78
+    },
+    {
+      "tag": "coders",
+      "scope": "Encoders and editing modes aider.",
+      "comment": "Mark aspects describing coder classes, mode switching, and architectural workflow.",
+      "number_of_references": 46
+    },
+    {
+      "tag": "commands",
+      "scope": "Slash commands and user-invoked automation.",
+      "comment": "Apply to `/run`, `/lint`, `/tokens` and other chat commands.",
+      "number_of_references": 26
+    },
+    {
+      "tag": "configuration",
+      "scope": "Configuration layers, loading settings and environment variables.",
+      "comment": "Working with .env, .aider.conf.yml, YAML/JSON settings.",
+      "number_of_references": 79
+    },
+    {
+      "tag": "context",
+      "scope": "Managing the context window and token budgets.",
+      "comment": "Use for aspects about calculating tokens, repo map sizes, trimming.",
+      "number_of_references": 19
+    },
+    {
+      "tag": "credentials",
+      "scope": "Working with API keys and secrets.",
+      "comment": "Mark your download `.env`, checking environment variables, OAuth.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "diagnostics",
+      "scope": "Error diagnosis and troubleshooting.",
+      "comment": "Use it for aspects about collecting logs, troubleshooting guides and recommendations for troubleshooting problems.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "docs",
+      "scope": "Project documentation, official guides and examples of use.",
+      "comment": "For aspects that retell aider.chat/docs, use examples and blogs that directly support workflows.",
+      "number_of_references": 172
+    },
+    {
+      "tag": "files",
+      "scope": "Selecting, ignoring and attaching files.",
+      "comment": "Use for logic `.aiderignore`, adding files to chat, attachments.",
+      "number_of_references": 22
+    },
+    {
+      "tag": "git",
+      "scope": "Git integration and repository management.",
+      "comment": "Finding git root, setting up gitignore, reading status.",
+      "number_of_references": 30
+    },
+    {
+      "tag": "gui",
+      "scope": "Browser interface and Streamlit GUI.",
+      "comment": "Apply to aspects of the aider graphical client.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "history",
+      "scope": "Storage and retrieval of communication history.",
+      "comment": "Use for `ChatSummary`, message logs, history processing.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "integrations",
+      "scope": "Integrations with external APIs and services.",
+      "comment": "Note aspects that interact with OpenRouter, Posthog, etc.",
+      "number_of_references": 29
+    },
+    {
+      "tag": "lint",
+      "scope": "Linters and code quality checks.",
+      "comment": "Use for `Linter`, auto-edits and linting commands.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "llm",
+      "scope": "Initialization and configuration of LLM clients.",
+      "comment": "Apply to litellm settings, model parameters, SSL.",
+      "number_of_references": 76
+    },
+    {
+      "tag": "models",
+      "scope": "Management of LLM models, aliases and settings.",
+      "comment": "Model registration, weak/editor models, provider parameters.",
+      "number_of_references": 31
+    },
+    {
+      "tag": "multimodal",
+      "scope": "Supports images, PDF and other non-text inputs.",
+      "comment": "Note the processing of vision/PDF attachments and multi-modal messages.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "packaging",
+      "scope": "Packaging and distribution: pyproject, extras, Docker, MANIFEST.",
+      "comment": "Use wheels, Docker images, dependency content, and delivery artifacts for aspects about building.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "performance",
+      "scope": "Optimizations and caches that affect performance.",
+      "comment": "Use for caching, reusing results, measurements.",
+      "number_of_references": 60
+    },
+    {
+      "tag": "prompts",
+      "scope": "Prompt templates and system messages.",
+      "comment": "Apply commit, summary, watch, etc. to text prompts.",
+      "number_of_references": 36
+    },
+    {
+      "tag": "repo-map",
+      "scope": "Repository mapping and building code context.",
+      "comment": "Use for token ranking, file tree, heuristics.",
+      "number_of_references": 53
+    },
+    {
+      "tag": "safety",
+      "scope": "Protective mechanisms against dangerous actions.",
+      "comment": "Mark checks before rollbacks, confirmations, data loss protection.",
+      "number_of_references": 12
+    },
+    {
+      "tag": "security",
+      "scope": "Security settings and connection checking.",
+      "comment": "Use for SSL, certificate checks, secure authorization.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "streaming",
+      "scope": "Streaming of command responses and outputs.",
+      "comment": "Apply to incremental output, spinners, realtime stream.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "summaries",
+      "scope": "Generation and updating of short retellings.",
+      "comment": "Use it to collapse history, summarizer prompts.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "support",
+      "scope": "User support materials: help commands, issue templates, smoketests docs.",
+      "comment": "Use for aspects related to user support and documentation checks.",
+      "number_of_references": 16
+    },
+    {
+      "tag": "testing",
+      "scope": "Running tests and verification commands.",
+      "comment": "Celebrate test automation `/test`, integration with CI.",
+      "number_of_references": 76
+    },
+    {
+      "tag": "tree-sitter",
+      "scope": "Tree-sitter rules for extracting definitions, links and modules.",
+      "comment": "For aspects about *.scm language requests, repo map and language packs.",
+      "number_of_references": 38
+    },
+    {
+      "tag": "utilities",
+      "scope": "Utilitarian classes and infrastructure helpers.",
+      "comment": "Apply to general helpers, temporary directories, spinners.",
+      "number_of_references": 40
+    },
+    {
+      "tag": "versioning",
+      "scope": "Mechanisms for determining and comparing aider versions and dependencies.",
+      "comment": "Use it for versioncheck logic, fallback versions and update scripts.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "voice",
+      "scope": "Voice input and transcription.",
+      "comment": "Use for audio recording, integration with Whisper.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "watchers",
+      "scope": "File and buffer watchers.",
+      "comment": "Mark change monitoring, clipboard, watch comments.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "website",
+      "scope": "Content and structure of the official website aider.dev.",
+      "comment": "Note aspects that describe site pages, their configuration and usage scenarios.",
+      "number_of_references": 170
+    },
+    {
+      "tag": "website-blog",
+      "scope": "Blog posts aider.dev.",
+      "comment": "Tag posts that retell blog articles.",
+      "number_of_references": 34
+    },
+    {
+      "tag": "website-config",
+      "scope": "Site settings and configuration articles.",
+      "comment": "Apply to materials about aider.conf and environment variables.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "website-docs",
+      "scope": "Help pages of the main section of the site documentation.",
+      "comment": "Use docs for sections (git, scripting, troubleshooting, etc.).",
+      "number_of_references": 25
+    },
+    {
+      "tag": "website-examples",
+      "scope": "Gallery of examples and showcase on the website.",
+      "comment": "Note the aspects that describe the Examples pages.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "website-install",
+      "scope": "aider installation instructions.",
+      "comment": "Place install on the pages (docker, replit, codespaces, optional).",
+      "number_of_references": 7
+    },
+    {
+      "tag": "website-leaderboards",
+      "scope": "Benchmark leaderboard pages on the website.",
+      "comment": "Use yaml/tables to describe leaderboards.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "website-llms",
+      "scope": "LLM providers and their settings on the website.",
+      "comment": "Note instructions for providers (OpenAI, DeepSeek, etc.).",
+      "number_of_references": 18
+    },
+    {
+      "tag": "website-recordings",
+      "scope": "Section of records / recordings of the site.",
+      "comment": "Apply to aspects about the publication and storage of records.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "website-troubleshooting",
+      "scope": "Troubleshooting pages on the site.",
+      "comment": "Use for troubleshooting guides and FAQ.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "website-usage",
+      "scope": "Guides for using aider on the site.",
+      "comment": "Share aspects that retell usage articles on aider.dev.",
+      "number_of_references": 17
+    },
+    {
+      "tag": "workflow",
+      "scope": "Processes of interaction between the user and the tool.",
+      "comment": "Sequence of commands, history, commit processes.",
+      "number_of_references": 189
+    }
+  ]
+}

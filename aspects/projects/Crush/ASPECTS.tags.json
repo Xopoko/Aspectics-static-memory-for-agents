@@ -1,0 +1,220 @@
+{
+  "tags": [
+    {
+      "tag": "agent",
+      "scope": "Coder agent orchestration, planning, and execution",
+      "comment": "Use for aspects describing the internal agent service, task pipelines, and tool coordination logic.",
+      "number_of_references": 47
+    },
+    {
+      "tag": "architecture",
+      "scope": "High-level application architecture and runtime boundaries",
+      "comment": "Capture system structure, major components, lifecycles, and cross-cutting concerns.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "automation",
+      "scope": "CI, CD, scheduled jobs, and developer automation",
+      "comment": "Apply to build pipelines, workflows, Taskfile recipes, and bot automation.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "bubbletea",
+      "scope": "Bubble Tea TUI framework usage",
+      "comment": "Use when an aspect explains Bubble Tea programs, models, views, or command wiring.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "chat",
+      "scope": "Chat page UI behaviours and messaging overlays",
+      "comment": "Use for aspects covering chat thread layout, message rendering, sidebar state, and related TUI chat interactions.",
+      "number_of_references": 43
+    },
+    {
+      "tag": "cli",
+      "scope": "Command-line interface, Cobra commands, and flags",
+      "comment": "Attach to aspects covering CLI entrypoints, command behaviours, and flag handling.",
+      "number_of_references": 57
+    },
+    {
+      "tag": "cli-runtime",
+      "scope": "Runtime orchestration commands exposed via the CLI",
+      "comment": "Use for CLI commands that bootstrap Crush, manage runtime data directories, refresh providers, or surface runtime logs.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "components",
+      "scope": "Reusable TUI component primitives and base utilities",
+      "comment": "Apply to aspects covering foundational TUI components (lists, keymaps, status widgets) that other views embed.",
+      "number_of_references": 12
+    },
+    {
+      "tag": "concurrency",
+      "scope": "Thread-safe collections, synchronization, and parallel primitives",
+      "comment": "Use when documenting csync maps, slices, lazy loaders, or other concurrency-oriented helpers.",
+      "number_of_references": 26
+    },
+    {
+      "tag": "config",
+      "scope": "Configuration files, schema, environment resolution",
+      "comment": "Use for configuration loading, defaults, schema generation, and option handling.",
+      "number_of_references": 51
+    },
+    {
+      "tag": "database",
+      "scope": "Data persistence layer and SQL contracts",
+      "comment": "Apply to migrations, sqlc queries, database services, and transactional flows.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "dialogs",
+      "scope": "Modal dialogs and overlay UX flows",
+      "comment": "Use for aspects detailing dialog stacks, keymaps, and modal workflows presented in the TUI.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "diffing",
+      "scope": "Diff generation and presentation utilities",
+      "comment": "Attach to aspects describing diff computation, formatting, and where diff output is consumed in tools or the TUI.",
+      "number_of_references": 34
+    },
+    {
+      "tag": "distribution",
+      "scope": "Release engineering and packaging",
+      "comment": "Use for GoReleaser, packaging metadata, and distribution logic.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "environment",
+      "scope": "Environment variable resolution and overrides",
+      "comment": "Use when aspects describe env var resolvers, CRUSH_* shadowing, or provider credential lookup.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "eventing",
+      "scope": "Event tracking and analytics",
+      "comment": "Use when describing metric events, telemetry pipelines, or feature tracking logic.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "filesystem",
+      "scope": "Filesystem layout, directories, and file operations",
+      "comment": "Apply to aspects covering path resolution, directory scaffolding, or file traversal utilities.",
+      "number_of_references": 53
+    },
+    {
+      "tag": "history",
+      "scope": "Conversation history, files, and summaries",
+      "comment": "Apply to aspects covering stored messages, file revisions, and summarization flows.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "llm",
+      "scope": "LLM integration and provider abstractions",
+      "comment": "Use for provider clients, streaming, prompts, and tool-call handling.",
+      "number_of_references": 119
+    },
+    {
+      "tag": "lsp",
+      "scope": "Language Server Protocol clients and wiring",
+      "comment": "Attach to aspects describing LSP client lifecycle, configuration, and synchronization.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "mcp",
+      "scope": "Model Context Protocol integrations",
+      "comment": "Use for MCP tool configuration, process management, and HTTP/SSE bridges.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "observability",
+      "scope": "Logging, metrics, profiling, and diagnostics",
+      "comment": "Apply to slog configuration, metrics toggles, profiling hooks, and debug tooling.",
+      "number_of_references": 22
+    },
+    {
+      "tag": "onboarding",
+      "scope": "First-run setup, onboarding screens, and initialization workflows",
+      "comment": "Use for aspects detailing Crush onboarding, initialization markers, or guided setup flows.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "permissions",
+      "scope": "Permission prompts and tool approvals",
+      "comment": "Use when documenting permission service behaviours, auto-approval modes, and policy enforcement.",
+      "number_of_references": 49
+    },
+    {
+      "tag": "prompts",
+      "scope": "LLM prompt templates and orchestration",
+      "comment": "Apply to aspects explaining embedded prompt files, context builders, and template selection logic for agents.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "providers",
+      "scope": "External model provider clients and adapters",
+      "comment": "Use for aspects covering provider-specific client construction, authentication, and event conversion logic.",
+      "number_of_references": 25
+    },
+    {
+      "tag": "pubsub",
+      "scope": "Publish/subscribe brokers inside the app",
+      "comment": "Attach to aspects detailing pubsub brokers, subscription flows, and fan-out messaging.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "rendering",
+      "scope": "Text rendering and formatting in the terminal UI",
+      "comment": "Use for aspects that escape, format, or position content within Crush's TUI components.",
+      "number_of_references": 50
+    },
+    {
+      "tag": "schema",
+      "scope": "JSON schema and validation",
+      "comment": "Use for schema generation, structure, and compatibility guarantees.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "session",
+      "scope": "Session lifecycle and management",
+      "comment": "Apply when covering session creation, updates, summarization, and related workflows.",
+      "number_of_references": 77
+    },
+    {
+      "tag": "shell",
+      "scope": "Shell execution and sandboxed command runners",
+      "comment": "Attach to aspects covering Crush's shell executor, persistent shells, and command blocking policies.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "sqlite",
+      "scope": "SQLite usage and tuning",
+      "comment": "Use for database connection setup, pragmas, and filesystem placement.",
+      "number_of_references": 17
+    },
+    {
+      "tag": "styles",
+      "scope": "Theming primitives, palettes, and shared styling helpers",
+      "comment": "Apply to aspects describing theme construction, icon glyph sets, markdown/chroma style exports, and other reusable TUI styling utilities.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "tests",
+      "scope": "Automated regression, snapshot, and integration coverage",
+      "comment": "Use for aspects documenting test suites, fixtures, and golden regressions across the project.",
+      "number_of_references": 49
+    },
+    {
+      "tag": "tui",
+      "scope": "Terminal UI layout, panes, and UX",
+      "comment": "Attach to aspects describing views, components, focus, and rendering behaviours.",
+      "number_of_references": 218
+    },
+    {
+      "tag": "widgets",
+      "scope": "Composite TUI widgets and experimental UI modules",
+      "comment": "Use for aspects describing higher-level list, diff, or other interactive widgets that assemble smaller components.",
+      "number_of_references": 43
+    }
+  ]
+}

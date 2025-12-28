@@ -1,0 +1,310 @@
+{
+  "tags": [
+    {
+      "tag": "agents",
+      "scope": "cli",
+      "comment": "Agent selection and runtime state.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "analytics",
+      "scope": "telemetry",
+      "comment": "Product analytics and usage collection.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "architecture",
+      "scope": "architecture",
+      "comment": "System structure, layer boundaries, and wiring.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "automation",
+      "scope": "automation",
+      "comment": "Automation hooks and external integrations.",
+      "number_of_references": 36
+    },
+    {
+      "tag": "ci",
+      "scope": "automation",
+      "comment": "Continuous integration workflows, jobs, and release automation.",
+      "number_of_references": 31
+    },
+    {
+      "tag": "cli",
+      "scope": "cli",
+      "comment": "Command-line interface and UX.",
+      "number_of_references": 35
+    },
+    {
+      "tag": "commands",
+      "scope": "cli",
+      "comment": "Forge command definitions and lifecycle.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "configuration",
+      "scope": "configuration",
+      "comment": "Runtime configuration management and APIs.",
+      "number_of_references": 68
+    },
+    {
+      "tag": "context",
+      "scope": "context-management",
+      "comment": "Context transformers, normalization, and reasoning adapters.",
+      "number_of_references": 24
+    },
+    {
+      "tag": "conversation",
+      "scope": "services",
+      "comment": "Conversation domain state and persistence.",
+      "number_of_references": 29
+    },
+    {
+      "tag": "database",
+      "scope": "infrastructure",
+      "comment": "Database and persistence implementations.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "developer",
+      "scope": "developer-tooling",
+      "comment": "Local developer experience, editors, and productivity tooling.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "discovery",
+      "scope": "filesystem",
+      "comment": "Repository and file discovery mechanisms.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "display",
+      "scope": "ui",
+      "comment": "Terminal rendering and formatting.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "domain",
+      "scope": "architecture",
+      "comment": "Core domain entities and value objects.",
+      "number_of_references": 81
+    },
+    {
+      "tag": "environment",
+      "scope": "infrastructure",
+      "comment": "Environment detection, shell, and OS config.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "errors",
+      "scope": "platform",
+      "comment": "Error handling and reporting surfaces.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "filesystem",
+      "scope": "filesystem",
+      "comment": "File-system abstractions and helpers.",
+      "number_of_references": 57
+    },
+    {
+      "tag": "infrastructure",
+      "scope": "architecture",
+      "comment": "Infrastructure layer components and factories.",
+      "number_of_references": 49
+    },
+    {
+      "tag": "integration",
+      "scope": "service-integrations",
+      "comment": "Adapters and bridges that connect Forge runtime with external systems or UI surfaces.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "llm",
+      "scope": "architecture",
+      "comment": "Model/provider integration for LLMs.",
+      "number_of_references": 28
+    },
+    {
+      "tag": "manifest",
+      "scope": "configuration",
+      "comment": "Crate manifests and dependency wiring.",
+      "number_of_references": 19
+    },
+    {
+      "tag": "mcp",
+      "scope": "services",
+      "comment": "Model Context Protocol integrations.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "operations",
+      "scope": "operations",
+      "comment": "Operational runbooks, docs, and support workflows.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "orchestration",
+      "scope": "orchestration",
+      "comment": "Agent orchestration and execution flow.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "persistence",
+      "scope": "infrastructure",
+      "comment": "Stateful storage, caches, and long-lived configuration.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "planning",
+      "scope": "strategy",
+      "comment": "Roadmaps, discovery documents, and staged implementation plans.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "policy",
+      "scope": "services",
+      "comment": "Permission policies and enforcement.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "prompt",
+      "scope": "orchestration",
+      "comment": "Prompt generation and manipulation.",
+      "number_of_references": 12
+    },
+    {
+      "tag": "provider",
+      "scope": "services",
+      "comment": "Provider registry and selection logic.",
+      "number_of_references": 54
+    },
+    {
+      "tag": "read",
+      "scope": "filesystem",
+      "comment": "File read operations and helpers.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "registry",
+      "scope": "architecture",
+      "comment": "Modules or manifests that collect and expose registries or re-export hubs for dependent components.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "release",
+      "scope": "automation",
+      "comment": "Release workflows and publishing automation.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "rendering",
+      "scope": "ui",
+      "comment": "Template and output rendering.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "retry",
+      "scope": "orchestration",
+      "comment": "Retry and backoff strategies.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "runtime",
+      "scope": "app-runtime",
+      "comment": "Runtime coordination between UI, services, and formatters.",
+      "number_of_references": 29
+    },
+    {
+      "tag": "safety",
+      "scope": "services",
+      "comment": "Safety checks guarding command execution.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "schema",
+      "scope": "configuration",
+      "comment": "Schema definitions and validation.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "search",
+      "scope": "tools",
+      "comment": "Search queries, truncation strategies, and display formatting across CLI, runtime, and tests.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "services",
+      "scope": "architecture",
+      "comment": "Service layer composition and contracts.",
+      "number_of_references": 110
+    },
+    {
+      "tag": "shell",
+      "scope": "infrastructure",
+      "comment": "Shell execution and environment bridging.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "snapshots",
+      "scope": "filesystem",
+      "comment": "Snapshot capture and history management.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "streaming",
+      "scope": "runtime",
+      "comment": "Streaming abstractions and flow control.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "telemetry",
+      "scope": "telemetry",
+      "comment": "Telemetry infrastructure and usage.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "templates",
+      "scope": "services",
+      "comment": "Template discovery and rendering.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "tests",
+      "scope": "quality",
+      "comment": "Test harnesses, fixtures, and verification strategy.",
+      "number_of_references": 78
+    },
+    {
+      "tag": "tools",
+      "scope": "tooling",
+      "comment": "Forge tool implementations and registries.",
+      "number_of_references": 107
+    },
+    {
+      "tag": "transformers",
+      "scope": "orchestration",
+      "comment": "Context transformers applied to provider conversations.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "ui",
+      "scope": "ui",
+      "comment": "User interface flows and components.",
+      "number_of_references": 28
+    },
+    {
+      "tag": "validation",
+      "scope": "quality",
+      "comment": "Syntax, policy, and data validation workflows.",
+      "number_of_references": 59
+    },
+    {
+      "tag": "workflow",
+      "scope": "configuration",
+      "comment": "Workflow definition and application.",
+      "number_of_references": 171
+    }
+  ]
+}

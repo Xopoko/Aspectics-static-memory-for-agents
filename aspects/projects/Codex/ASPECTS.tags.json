@@ -1,0 +1,544 @@
+{
+  "tags": [
+    {
+      "tag": "app-server",
+      "scope": "App Server and JSON-RPC UX",
+      "comment": "We mark aspects of the app server, protocol and event routing tests.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "app-server-flow",
+      "scope": "App server threads",
+      "comment": "Overview of JSON-RPC, approvals and search within app-server.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "apply-patch",
+      "scope": "Execution and Verification `apply_patch`",
+      "comment": "We mark the aspects that control patch execution and admission policies.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "apply-patch-flow",
+      "scope": "Pipeline apply_patch",
+      "comment": "Review entries and key stages of apply_patch (parser, persistence, approvals).",
+      "number_of_references": 20
+    },
+    {
+      "tag": "architecture",
+      "scope": "Codex-rs workspace architecture",
+      "comment": "Describes key crates, binaries and connections of subsystems.",
+      "number_of_references": 24
+    },
+    {
+      "tag": "auth",
+      "scope": "Authentication and Tokens",
+      "comment": "Used for the logic of working with API keys, refresh-flow and storing secrets.",
+      "number_of_references": 39
+    },
+    {
+      "tag": "automation",
+      "scope": "Auto-processes GitHub Actions",
+      "comment": "Tag for repository automation scenarios (issue triage, housekeeping), where Codex or Action operates without user intervention.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "backend-client",
+      "scope": "Codex Backend Clients",
+      "comment": "CLI bridges  Codex backend: parsers, HTTP adapters, path-style policies.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "backend-sdk",
+      "scope": "Backend SDK",
+      "comment": "Common clients and access models for Codex backend (CLI/MCP).",
+      "number_of_references": 4
+    },
+    {
+      "tag": "change-tracking",
+      "scope": "Track and apply changes",
+      "comment": "We mark the aspects that control the receipt of diff, the apply pipeline and the analysis of edits.",
+      "number_of_references": 32
+    },
+    {
+      "tag": "ci",
+      "scope": "CI pipelines Codex",
+      "comment": "We use it for GitHub Actions and build/test reviews to quickly find pipelines.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "cli",
+      "scope": "CLI interface",
+      "comment": "Posts about the multi-tool binary, subcommands and UX CLI.",
+      "number_of_references": 86
+    },
+    {
+      "tag": "cli-core",
+      "scope": "Core CLI",
+      "comment": "Main files and routing of codex binary subcommands.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "cli-core",
+      "scope": "Core CLI",
+      "comment": "Main files and routing of codex binary subcommands.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "cli-packaging",
+      "scope": "CLI packaging",
+      "comment": "Building containers, npm packages and codex binary delivery scripts.",
+      "number_of_references": 12
+    },
+    {
+      "tag": "cloud-tasks",
+      "scope": "Codex Cloud tasks UI/API",
+      "comment": "Tag for Codex Cloud Tasks UI, CLI and API, including mocks and env detection.",
+      "number_of_references": 22
+    },
+    {
+      "tag": "cloud-tasks-client",
+      "scope": "Codex Cloud Tasks Client",
+      "comment": "HTTP clients, parsers and contracts Codex Cloud Tasks.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "concurrency",
+      "scope": "Parallel execution",
+      "comment": "Tag for coordinating simultaneous tool calls and synchronization.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "config",
+      "scope": "Custom CLI and App Server settings",
+      "comment": "We use it for aspects that describe the JSON-RPC configuration and saved overrides.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "config-core",
+      "scope": "Kernel configuration",
+      "comment": "Codex configuration key read/summary files.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "configuration",
+      "scope": "Codex Configuration",
+      "comment": "Applies to config.toml, overrides, and launch profiles layers.",
+      "number_of_references": 58
+    },
+    {
+      "tag": "conversation",
+      "scope": "Session management",
+      "comment": "We use it when the aspect describes the ConversationManager, history, tokens.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "data-contracts",
+      "scope": "Codex Contracts and Responses API",
+      "comment": "We mark JSON models and schemas that synchronize the backend with clients.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "data-contracts-core",
+      "scope": "Contract Core",
+      "comment": "Main Responses and app-server protocol files.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "devcontainer",
+      "scope": "Dev Containers",
+      "comment": "Settings `.devcontainer`, Dockerfile and development environment deployment workflow.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "diff",
+      "scope": "Aggregation and display of changes",
+      "comment": "For unified diff logic, file tracking and utility utilities.",
+      "number_of_references": 19
+    },
+    {
+      "tag": "distribution",
+      "scope": "Delivery and packaging",
+      "comment": "Notes npm wrappers, binary building, and distribution logic.",
+      "number_of_references": 25
+    },
+    {
+      "tag": "env",
+      "scope": "Selecting Codex Cloud Environments",
+      "comment": "Tag for auto-detection of environments, modals and related hints.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "events",
+      "scope": "Threads and Event Listeners",
+      "comment": "We mark the processing of events and subscriptions (event stream, listener).",
+      "number_of_references": 4
+    },
+    {
+      "tag": "exec",
+      "scope": "Execution of commands `exec`",
+      "comment": "Aspects about running commands, stdout/stderr stream and bridge to executor.",
+      "number_of_references": 40
+    },
+    {
+      "tag": "execution",
+      "scope": "Executive pipeline",
+      "comment": "We use for executor, sandbox selection, `run_exec_with_events`.",
+      "number_of_references": 32
+    },
+    {
+      "tag": "filesystem",
+      "scope": "Working with files and directories",
+      "comment": "Tools for reading, listing, navigating the file system.",
+      "number_of_references": 9
+    },
+    {
+      "tag": "fs",
+      "scope": "File system operations in sandbox",
+      "comment": "We use it when the aspect describes secure writing/reading (apply patch, sandbox).",
+      "number_of_references": 1
+    },
+    {
+      "tag": "gh-cli",
+      "scope": "GitHub CLI Scripts and Tools (`gh`)",
+      "comment": "We use it when the aspect is based on `gh` (downloads artifacts, searches for workflow) for builds or releases.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "git",
+      "scope": "Git integration",
+      "comment": "Collecting information about branches, SHA, diff to remote ones.",
+      "number_of_references": 30
+    },
+    {
+      "tag": "history",
+      "scope": "Dialogue history",
+      "comment": "For aspects that filter and store user/agent messages.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "input",
+      "scope": "User input and forms",
+      "comment": "Tag for composer, modal windows and input handlers in CLI/TUI.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "integrations",
+      "scope": "Integrations with external services",
+      "comment": "We use it for bridges to ChatGPT, MCP, backend API and other external systems.",
+      "number_of_references": 54
+    },
+    {
+      "tag": "interface",
+      "scope": "User Interface",
+      "comment": "Broad tag for user experience (TUI, app-server, tooltips, UX).",
+      "number_of_references": 120
+    },
+    {
+      "tag": "jsonrpc",
+      "scope": "JSON-RPC protocol Codex",
+      "comment": "We use IDE  Codex app-server for methods and messages.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "linting",
+      "scope": "Static analyzers",
+      "comment": "Configurations and scripts for clippy, codespell, sanitizer and other lint checks.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "linux",
+      "scope": "Features of the Linux environment",
+      "comment": "Tag for landlock/seccomp and other Linux security mechanisms.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "macos",
+      "scope": "Features of the macOS platform",
+      "comment": "We use it for sandbox/seatbelt and macOS platform restrictions.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "mcp",
+      "scope": "MCP Integrations",
+      "comment": "Description of setting up MCP servers, transports and their validation.",
+      "number_of_references": 64
+    },
+    {
+      "tag": "mcp-flow",
+      "scope": "MCP streams",
+      "comment": "Main MCP server/client files and integration tests.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "mcp-testing",
+      "scope": "MCP testing",
+      "comment": "Local STDIO/HTTP servers and helpers for checking MCP clients.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "messages",
+      "scope": "Codex Message Structures",
+      "comment": "We mark message models, ThreadItem and other payloads sent to clients.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "node",
+      "scope": "Node.js wrappers and tools",
+      "comment": "Apply to JS code that launches or extends the CLI.",
+      "number_of_references": 17
+    },
+    {
+      "tag": "notifications",
+      "scope": "Custom notifications",
+      "comment": "Managing hooks, delivery and tests `UserNotifier`/notification of events.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "observability",
+      "scope": "Observability and UX Logs",
+      "comment": "For aspects that extend interface logs and metrics, including OTEL events.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "ollama",
+      "scope": "Integration with Ollama",
+      "comment": "We mark client calls and event processing for local Ollama models.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "onboarding",
+      "scope": "Onboarding and first UX scenarios",
+      "comment": "Welcome screen, mode selection and part of TUI flow onboarding.",
+      "number_of_references": 19
+    },
+    {
+      "tag": "persistence",
+      "scope": "Data persistence",
+      "comment": "Records about storing rollouts, logs and long-term state.",
+      "number_of_references": 13
+    },
+    {
+      "tag": "plan",
+      "scope": "Scheduling tasks",
+      "comment": "Used for plan recording tools, structured progress.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "pnpm",
+      "scope": "pnpm configuration",
+      "comment": "Workspace settings, hoisting and scripts for the pnpm package manager.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "pty",
+      "scope": "PTY and terminal management",
+      "comment": "Pseudo-terminals, their managers and input/output processing.",
+      "number_of_references": 5
+    },
+    {
+      "tag": "repo-maintenance",
+      "scope": "Repository housekeeping",
+      "comment": "Grouping prettier/codespell, pnpm and git housekeeping recipes.",
+      "number_of_references": 16
+    },
+    {
+      "tag": "repository",
+      "scope": "Repository metadata",
+      "comment": "Search git-root, global information about the project.",
+      "number_of_references": 23
+    },
+    {
+      "tag": "responses-api",
+      "scope": "Responses API Codex",
+      "comment": "Responses API clients, schemas, and middleware.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "rust",
+      "scope": "The Rust language and ecosystem",
+      "comment": "We mark aspects about the Rust implementation (crates, lint policies, assembly).",
+      "number_of_references": 298
+    },
+    {
+      "tag": "sandbox",
+      "scope": "Sandboxes and security",
+      "comment": "Aspects about sandbox_policy, command and patch restrictions.",
+      "number_of_references": 59
+    },
+    {
+      "tag": "sandbox-policy",
+      "scope": "execpolicy",
+      "comment": "Tests and configurations that check execpolicy whitelists/blacklists and shell mutations.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "schema",
+      "scope": "Defining JSON Schemas",
+      "comment": "We use it to describe Tools/Responses API schemes.",
+      "number_of_references": 44
+    },
+    {
+      "tag": "sdk",
+      "scope": "Client SDKs",
+      "comment": "Posts about TypeScript/other SDKs and integration methods.",
+      "number_of_references": 26
+    },
+    {
+      "tag": "search",
+      "scope": "Search by code",
+      "comment": "Tools for searching files, text and results `rg`.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "secrets",
+      "scope": "Managing secrets and auth.json",
+      "comment": "List of practices for reading/storing API keys, tokens and clearing CLI buffers.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "security",
+      "scope": "Security and access control",
+      "comment": "General security processes that do not fall into the sandbox.",
+      "number_of_references": 73
+    },
+    {
+      "tag": "security-core",
+      "scope": "Core security",
+      "comment": "Basic mechanisms of trust evaluation and hardening.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "security-tests",
+      "scope": "Security tests",
+      "comment": "Integration scripts login, sandbox and approvals.",
+      "number_of_references": 12
+    },
+    {
+      "tag": "sessions",
+      "scope": "Sessions and rollouts",
+      "comment": "Persistence and user session management.",
+      "number_of_references": 56
+    },
+    {
+      "tag": "shell",
+      "scope": "Policies and shell environment",
+      "comment": "Working with environment variables, Justification and shell calls.",
+      "number_of_references": 15
+    },
+    {
+      "tag": "shortcuts",
+      "scope": "Keyboard shortcuts",
+      "comment": "We use it for aspects that describe the processing of keyboard shortcuts and hot actions.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "status",
+      "scope": "UI statuses and indicators",
+      "comment": "Tag for status lines, spinners and messages about the progress of background operations.",
+      "number_of_references": 3
+    },
+    {
+      "tag": "telemetry",
+      "scope": "Observability and OTEL",
+      "comment": "Tracing, logging of tool results, exporters.",
+      "number_of_references": 32
+    },
+    {
+      "tag": "telemetry-core",
+      "scope": "Basic telemetry",
+      "comment": "Entries describing OTEL initialization and Codex key logs.",
+      "number_of_references": 29
+    },
+    {
+      "tag": "testing",
+      "scope": "Codex Unit and Integration Tests",
+      "comment": "We use it for writing about the test infrastructure CLI, SDK and tools.",
+      "number_of_references": 135
+    },
+    {
+      "tag": "testing-cli",
+      "scope": "CLI tests",
+      "comment": "Comprehensive CLI tests that check configuration, seatbelt, env, and interaction scenarios.",
+      "number_of_references": 27
+    },
+    {
+      "tag": "threads",
+      "scope": "Threads and thread management",
+      "comment": "We use it for an SDK that works with the Thread API and resume.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "tooling-core",
+      "scope": "Basic tools",
+      "comment": "Common tool mechanisms (tool harness, execpolicy, Responses tool schemas).",
+      "number_of_references": 51
+    },
+    {
+      "tag": "tools",
+      "scope": "Implementation of tools",
+      "comment": "Routing, registries, handlers and tool context.",
+      "number_of_references": 71
+    },
+    {
+      "tag": "truncate",
+      "scope": "Truncation of output",
+      "comment": "Functions that limit the volume of logs/responses.",
+      "number_of_references": 4
+    },
+    {
+      "tag": "tui",
+      "scope": "TUI implementation",
+      "comment": "A narrow tag for Ratatui application details, widgets, events.",
+      "number_of_references": 116
+    },
+    {
+      "tag": "tui-bottom-pane",
+      "scope": "TUI bottom panel",
+      "comment": "We collect aspects of the composer, popup components and the state of the bottom panel.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "tui-core",
+      "scope": "Main runtime TUI",
+      "comment": "Event loop, registry and orchestration of the chat widget that control the TUI loop.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "tui-rendering",
+      "scope": "TUI interface rendering",
+      "comment": "Components for displaying lines, markdown, colors and statuses in the terminal.",
+      "number_of_references": 30
+    },
+    {
+      "tag": "tui-testing",
+      "scope": "TUI testing",
+      "comment": "Unit and integration tests covering TUI and vt100 pipelines.",
+      "number_of_references": 7
+    },
+    {
+      "tag": "typescript",
+      "scope": "TypeScript Ecosystem",
+      "comment": "TypeScript code and tools in the SDK.",
+      "number_of_references": 28
+    },
+    {
+      "tag": "updates",
+      "scope": "Updates and release notifications",
+      "comment": "We use it for aspects of checking for updates, cache and release banners.",
+      "number_of_references": 1
+    },
+    {
+      "tag": "vscode",
+      "scope": "VS Code Configuration",
+      "comment": "Settings for extensions, launch configs and quality-of-life for VS Code.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "vt100",
+      "scope": "Terminal vt100 scenarios",
+      "comment": "Tests and render pipelines working with vt100 ports/emulation.",
+      "number_of_references": 11
+    }
+  ]
+}

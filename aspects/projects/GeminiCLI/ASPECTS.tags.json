@@ -1,0 +1,292 @@
+{
+  "tags": [
+    {
+      "tag": "agents",
+      "scope": "Integrations team",
+      "comment": "Related to ACP subagents and agent registry implementation. Revision 2025-10-13; covers registration and interaction protocol.",
+      "number_of_references": 33
+    },
+    {
+      "tag": "auth",
+      "scope": "Security team",
+      "comment": "User and server authentication processes. Revision 2025-10-13; includes OAuth, ADC and session verification.",
+      "number_of_references": 40
+    },
+    {
+      "tag": "automation",
+      "scope": "Automation team",
+      "comment": "Scripts for automating builds, publications and auxiliary tasks. Revision 2025-10-13; includes CI and npm workflow scripts.",
+      "number_of_references": 42
+    },
+    {
+      "tag": "build",
+      "scope": "Automation team",
+      "comment": "Low-level operations for assembling packages and artifacts. Revision 2025-10-13; We use it for assembly pipelines and bundles.",
+      "number_of_references": 16
+    },
+    {
+      "tag": "cli",
+      "scope": "CLI command",
+      "comment": "Common user CLI and terminal interaction. Revision 2025-10-13; covers key gemini CLI scripts.",
+      "number_of_references": 256
+    },
+    {
+      "tag": "cli-command",
+      "scope": "CLI command",
+      "comment": "Specific commands `gemini …` and their handlers. Revision 2025-10-13; We use it to quickly search for commands.",
+      "number_of_references": 52
+    },
+    {
+      "tag": "code-assist",
+      "scope": "Integrations team",
+      "comment": "Integration with Google Code Assist and related services. Revision 2025-10-14; includes backend, client and UX confirmations.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "config",
+      "scope": "CLI command",
+      "comment": "Configuration structures, schemas and resolvers. Revision 2025-10-13; includes settings.json and CLI config.",
+      "number_of_references": 49
+    },
+    {
+      "tag": "core",
+      "scope": "Core platform",
+      "comment": "GeminiCore core execution cycle and management services. Revision 2025-10-13; We use core for internal services.",
+      "number_of_references": 98
+    },
+    {
+      "tag": "editing",
+      "scope": "Tools team",
+      "comment": "File editing tools, diff strategies and input validation. Revision 2025-10-13; covers EditTool, SmartEdit and proofreaders.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "execution",
+      "scope": "Core platform",
+      "comment": "Command execution orchestration and CLI process management. Revision 2025-10-13; includes launching tool pipelines and cycles.",
+      "number_of_references": 44
+    },
+    {
+      "tag": "extensions",
+      "scope": "Extensions team",
+      "comment": "Gemini CLI extensions: download, storage and updates. Revision 2025-10-13; apply to all aspects of the extension ecosystem.",
+      "number_of_references": 37
+    },
+    {
+      "tag": "fallback",
+      "scope": "Core platform",
+      "comment": "Fallback mechanics for model errors and network scenarios. Revision 2025-10-13; covers Flash fallback and backup paths.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "filesystem",
+      "scope": "Tools team",
+      "comment": "Working with the file system and accessing the working folder. Revision 2025-10-13; we use it for abstractions and FS tools.",
+      "number_of_references": 48
+    },
+    {
+      "tag": "ide",
+      "scope": "Integrations team",
+      "comment": "IDE integrations and related services. Revision 2025-10-13; includes Zed, VSCode companion and ACP backend.",
+      "number_of_references": 25
+    },
+    {
+      "tag": "ink",
+      "scope": "CLI command",
+      "comment": "Components and hooks of Ink rendering of terminal UI. Revision 2025-10-13; apply to aspects of React/Ink implementation.",
+      "number_of_references": 120
+    },
+    {
+      "tag": "integration-tests",
+      "scope": "QA team",
+      "comment": "Integration and end-to-end CLI tests. Revision 2025-10-13; covers Vitest and test fixtures.",
+      "number_of_references": 6
+    },
+    {
+      "tag": "integrations",
+      "scope": "Integrations team",
+      "comment": "Connecting external services and protocols to the CLI. Revision 2025-10-13; We use it for MCP, IDE and external APIs.",
+      "number_of_references": 72
+    },
+    {
+      "tag": "loop-detection",
+      "scope": "Security team",
+      "comment": "Mechanisms to protect against infinite loops. Revision 2025-10-13; highlight LoopDetectionService and its rules.",
+      "number_of_references": 2
+    },
+    {
+      "tag": "mcp",
+      "scope": "Integrations team",
+      "comment": "Model Context Protocol and associated servers. Revision 2025-10-13; includes configuration, authorization, and MCP clients.",
+      "number_of_references": 33
+    },
+    {
+      "tag": "memory",
+      "scope": "Core platform",
+      "comment": "Working with session memory and history storage. Revision 2025-10-13; covers ChatRecording and memory loading.",
+      "number_of_references": 32
+    },
+    {
+      "tag": "metrics",
+      "scope": "Telemetry team",
+      "comment": "OpenTelemetry counters and metrics. Revision 2025-10-13; We use it for quantitative metrics.",
+      "number_of_references": 8
+    },
+    {
+      "tag": "noninteractive",
+      "scope": "CLI command",
+      "comment": "CLI modes without terminal UI. Revision 2025-10-13; covers non-interactive launch and tools.",
+      "number_of_references": 10
+    },
+    {
+      "tag": "observability",
+      "scope": "Telemetry team",
+      "comment": "Observability mechanisms: logs, spans, UI debug. Revision 2025-10-13; we distinguish from metrics, the focus is on visualization.",
+      "number_of_references": 34
+    },
+    {
+      "tag": "policy",
+      "scope": "Security team",
+      "comment": "PolicyEngine, confirmation rules and access policy. Revision 2025-10-13; includes configuration and MessageBus.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "release",
+      "scope": "Automation team",
+      "comment": "Release pipelines and package publications. Revision 2025-10-13; covers npm/GitHub release processes.",
+      "number_of_references": 11
+    },
+    {
+      "tag": "routing",
+      "scope": "Core platform",
+      "comment": "Model routers and strategy selection classifiers. Revision 2025-10-14; includes routes, fallback and context signals.",
+      "number_of_references": 17
+    },
+    {
+      "tag": "sandbox",
+      "scope": "Security team",
+      "comment": "Sandbox environment, containers and team policies. Revision 2025-10-13; We use it to build and run sandbox.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "security",
+      "scope": "Security team",
+      "comment": "CLI security: checks, dialogs, confirmations. Revision 2025-10-13; general coverage of security requirements.",
+      "number_of_references": 65
+    },
+    {
+      "tag": "settings",
+      "scope": "CLI command",
+      "comment": "Settings, schema and migration layers settings.json. Revision 2025-10-13; includes MIGRATION_MAP and resolvers.",
+      "number_of_references": 33
+    },
+    {
+      "tag": "shell",
+      "scope": "Tools team",
+      "comment": "Interaction of the CLI with shell commands and execution. Revision 2025-10-13; concerns ShellTool and confirmations.",
+      "number_of_references": 16
+    },
+    {
+      "tag": "slash-commands",
+      "scope": "CLI command",
+      "comment": "Infrastructure of slash commands and their loaders. Revision 2025-10-14; We use it for the pipeline and secure command processing.",
+      "number_of_references": 36
+    },
+    {
+      "tag": "startup",
+      "scope": "CLI command",
+      "comment": "Prepare, initialize and terminate the CLI process. Revision 2025-10-13; new tag for aspects of the starting sequence.",
+      "number_of_references": 36
+    },
+    {
+      "tag": "streaming",
+      "scope": "Core platform",
+      "comment": "Streaming model responses and processing tokens. Revision 2025-10-13; includes TurnRunner and GeminiChat.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "telemetry",
+      "scope": "Telemetry team",
+      "comment": "Common telemetry mechanisms and SDK. Revision 2025-10-13; covers signal collection services.",
+      "number_of_references": 42
+    },
+    {
+      "tag": "terminal",
+      "scope": "CLI command",
+      "comment": "Setting up the terminal, keybinding and TTY launch modes. Revision 2025-10-16; covers raw mode, Kitty protocol and window title control.",
+      "number_of_references": 22
+    },
+    {
+      "tag": "testing",
+      "scope": "QA team",
+      "comment": "Common test utilities and strategies. Revision 2025-10-13; includes unit and integration scenarios.",
+      "number_of_references": 18
+    },
+    {
+      "tag": "tools",
+      "scope": "Tools team",
+      "comment": "Tools (Tool API) and their infrastructure. Revision 2025-10-13; covers registry and individual tools.",
+      "number_of_references": 65
+    },
+    {
+      "tag": "trust",
+      "scope": "Security team",
+      "comment": "Trusted directories and trust levels. Revision 2025-10-13; includes TrustedFolders and trust selection UI.",
+      "number_of_references": 12
+    },
+    {
+      "tag": "ui",
+      "scope": "CLI command",
+      "comment": "CLI user interface, components and UX. Revision 2025-10-13; apply to Ink UI and UX cases.",
+      "number_of_references": 205
+    },
+    {
+      "tag": "ui-diagnostics",
+      "scope": "CLI command",
+      "comment": "Diagnostic panels, statistics and debug interfaces. Revision 2025-10-16; includes debug console, profiler and resource monitoring.",
+      "number_of_references": 20
+    },
+    {
+      "tag": "ui-dialogs",
+      "scope": "CLI command",
+      "comment": "Dialog boxes, notifications and consent flow Ink UI. Revision 2025-10-16; We highlight modals, nudges and confirmations.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "ui-hooks",
+      "scope": "CLI command",
+      "comment": "Ink hooks and interface state contexts. Revision 2025-10-16; covers use groups and UI state providers.",
+      "number_of_references": 44
+    },
+    {
+      "tag": "ui-input",
+      "scope": "CLI command",
+      "comment": "Input components, tooltips, and shell/TTY adapters. Revision 2025-10-16; includes composer, selection list and history.",
+      "number_of_references": 26
+    },
+    {
+      "tag": "ui-layout",
+      "scope": "CLI command",
+      "comment": "Wireframe Ink components, layout and application framework. Revision 2025-10-16; covers containers, header, footer and general constants.",
+      "number_of_references": 26
+    },
+    {
+      "tag": "ui-messages",
+      "scope": "CLI command",
+      "comment": "Rendering of messages of models and tools in the interface. Revision 2025-10-16; includes answer cards and a confirm capture tool.",
+      "number_of_references": 21
+    },
+    {
+      "tag": "updates",
+      "scope": "CLI command",
+      "comment": "Updates for extensions and the CLI itself. Revision 2025-10-13; new tag for pipelines and UX updates.",
+      "number_of_references": 14
+    },
+    {
+      "tag": "workspace",
+      "scope": "CLI command",
+      "comment": "Workspace structure, contexts and associated operations. Revision 2025-10-13; covers WorkspaceContext and migrations.",
+      "number_of_references": 32
+    }
+  ]
+}
