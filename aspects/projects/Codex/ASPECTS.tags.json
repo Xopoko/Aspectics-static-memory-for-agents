@@ -4,13 +4,13 @@
       "tag": "app-server",
       "scope": "App Server and JSON-RPC UX",
       "comment": "We mark aspects of the app server, protocol and event routing tests.",
-      "number_of_references": 20
+      "number_of_references": 24
     },
     {
       "tag": "app-server-flow",
       "scope": "App server threads",
       "comment": "Overview of JSON-RPC, approvals and search within app-server.",
-      "number_of_references": 15
+      "number_of_references": 18
     },
     {
       "tag": "apply-patch",
@@ -28,7 +28,7 @@
       "tag": "architecture",
       "scope": "Codex-rs workspace architecture",
       "comment": "Describes key crates, binaries and connections of subsystems.",
-      "number_of_references": 24
+      "number_of_references": 26
     },
     {
       "tag": "auth",
@@ -46,7 +46,7 @@
       "tag": "backend-client",
       "scope": "Codex Backend Clients",
       "comment": "CLI bridges  Codex backend: parsers, HTTP adapters, path-style policies.",
-      "number_of_references": 7
+      "number_of_references": 9
     },
     {
       "tag": "backend-sdk",
@@ -64,13 +64,13 @@
       "tag": "ci",
       "scope": "CI pipelines Codex",
       "comment": "We use it for GitHub Actions and build/test reviews to quickly find pipelines.",
-      "number_of_references": 10
+      "number_of_references": 11
     },
     {
       "tag": "cli",
       "scope": "CLI interface",
       "comment": "Posts about the multi-tool binary, subcommands and UX CLI.",
-      "number_of_references": 86
+      "number_of_references": 88
     },
     {
       "tag": "cli-core",
@@ -106,7 +106,7 @@
       "tag": "concurrency",
       "scope": "Parallel execution",
       "comment": "Tag for coordinating simultaneous tool calls and synchronization.",
-      "number_of_references": 11
+      "number_of_references": 12
     },
     {
       "tag": "config",
@@ -118,13 +118,13 @@
       "tag": "config-core",
       "scope": "Kernel configuration",
       "comment": "Codex configuration key read/summary files.",
-      "number_of_references": 9
+      "number_of_references": 12
     },
     {
       "tag": "configuration",
       "scope": "Codex Configuration",
       "comment": "Applies to config.toml, overrides, and launch profiles layers.",
-      "number_of_references": 58
+      "number_of_references": 68
     },
     {
       "tag": "conversation",
@@ -136,7 +136,7 @@
       "tag": "data-contracts",
       "scope": "Codex Contracts and Responses API",
       "comment": "We mark JSON models and schemas that synchronize the backend with clients.",
-      "number_of_references": 5
+      "number_of_references": 8
     },
     {
       "tag": "data-contracts-core",
@@ -172,25 +172,25 @@
       "tag": "events",
       "scope": "Threads and Event Listeners",
       "comment": "We mark the processing of events and subscriptions (event stream, listener).",
-      "number_of_references": 4
+      "number_of_references": 3
     },
     {
       "tag": "exec",
       "scope": "Execution of commands `exec`",
       "comment": "Aspects about running commands, stdout/stderr stream and bridge to executor.",
-      "number_of_references": 40
+      "number_of_references": 39
     },
     {
       "tag": "execution",
       "scope": "Executive pipeline",
       "comment": "We use for executor, sandbox selection, `run_exec_with_events`.",
-      "number_of_references": 32
+      "number_of_references": 33
     },
     {
       "tag": "filesystem",
       "scope": "Working with files and directories",
       "comment": "Tools for reading, listing, navigating the file system.",
-      "number_of_references": 9
+      "number_of_references": 8
     },
     {
       "tag": "fs",
@@ -208,13 +208,13 @@
       "tag": "git",
       "scope": "Git integration",
       "comment": "Collecting information about branches, SHA, diff to remote ones.",
-      "number_of_references": 30
+      "number_of_references": 28
     },
     {
       "tag": "history",
       "scope": "Dialogue history",
       "comment": "For aspects that filter and store user/agent messages.",
-      "number_of_references": 14
+      "number_of_references": 16
     },
     {
       "tag": "input",
@@ -226,13 +226,13 @@
       "tag": "integrations",
       "scope": "Integrations with external services",
       "comment": "We use it for bridges to ChatGPT, MCP, backend API and other external systems.",
-      "number_of_references": 54
+      "number_of_references": 57
     },
     {
       "tag": "interface",
       "scope": "User Interface",
       "comment": "Broad tag for user experience (TUI, app-server, tooltips, UX).",
-      "number_of_references": 120
+      "number_of_references": 123
     },
     {
       "tag": "jsonrpc",
@@ -250,7 +250,7 @@
       "tag": "linux",
       "scope": "Features of the Linux environment",
       "comment": "Tag for landlock/seccomp and other Linux security mechanisms.",
-      "number_of_references": 4
+      "number_of_references": 3
     },
     {
       "tag": "macos",
@@ -262,7 +262,7 @@
       "tag": "mcp",
       "scope": "MCP Integrations",
       "comment": "Description of setting up MCP servers, transports and their validation.",
-      "number_of_references": 64
+      "number_of_references": 67
     },
     {
       "tag": "mcp-flow",
@@ -274,7 +274,7 @@
       "tag": "mcp-testing",
       "scope": "MCP testing",
       "comment": "Local STDIO/HTTP servers and helpers for checking MCP clients.",
-      "number_of_references": 3
+      "number_of_references": 2
     },
     {
       "tag": "messages",
@@ -286,13 +286,13 @@
       "tag": "node",
       "scope": "Node.js wrappers and tools",
       "comment": "Apply to JS code that launches or extends the CLI.",
-      "number_of_references": 17
+      "number_of_references": 18
     },
     {
       "tag": "notifications",
       "scope": "Custom notifications",
       "comment": "Managing hooks, delivery and tests `UserNotifier`/notification of events.",
-      "number_of_references": 5
+      "number_of_references": 7
     },
     {
       "tag": "observability",
@@ -316,18 +316,12 @@
       "tag": "persistence",
       "scope": "Data persistence",
       "comment": "Records about storing rollouts, logs and long-term state.",
-      "number_of_references": 13
+      "number_of_references": 14
     },
     {
       "tag": "plan",
       "scope": "Scheduling tasks",
       "comment": "Used for plan recording tools, structured progress.",
-      "number_of_references": 2
-    },
-    {
-      "tag": "pnpm",
-      "scope": "pnpm configuration",
-      "comment": "Workspace settings, hoisting and scripts for the pnpm package manager.",
       "number_of_references": 2
     },
     {
@@ -340,7 +334,7 @@
       "tag": "repo-maintenance",
       "scope": "Repository housekeeping",
       "comment": "Grouping prettier/codespell, pnpm and git housekeeping recipes.",
-      "number_of_references": 16
+      "number_of_references": 18
     },
     {
       "tag": "repository",
@@ -352,31 +346,31 @@
       "tag": "responses-api",
       "scope": "Responses API Codex",
       "comment": "Responses API clients, schemas, and middleware.",
-      "number_of_references": 15
+      "number_of_references": 16
     },
     {
       "tag": "rust",
       "scope": "The Rust language and ecosystem",
       "comment": "We mark aspects about the Rust implementation (crates, lint policies, assembly).",
-      "number_of_references": 298
+      "number_of_references": 314
     },
     {
       "tag": "sandbox",
       "scope": "Sandboxes and security",
       "comment": "Aspects about sandbox_policy, command and patch restrictions.",
-      "number_of_references": 59
+      "number_of_references": 61
     },
     {
       "tag": "sandbox-policy",
       "scope": "execpolicy",
       "comment": "Tests and configurations that check execpolicy whitelists/blacklists and shell mutations.",
-      "number_of_references": 14
+      "number_of_references": 13
     },
     {
       "tag": "schema",
       "scope": "Defining JSON Schemas",
       "comment": "We use it to describe Tools/Responses API schemes.",
-      "number_of_references": 44
+      "number_of_references": 46
     },
     {
       "tag": "sdk",
@@ -388,7 +382,7 @@
       "tag": "search",
       "scope": "Search by code",
       "comment": "Tools for searching files, text and results `rg`.",
-      "number_of_references": 11
+      "number_of_references": 12
     },
     {
       "tag": "secrets",
@@ -400,7 +394,7 @@
       "tag": "security",
       "scope": "Security and access control",
       "comment": "General security processes that do not fall into the sandbox.",
-      "number_of_references": 73
+      "number_of_references": 75
     },
     {
       "tag": "security-core",
@@ -418,7 +412,7 @@
       "tag": "sessions",
       "scope": "Sessions and rollouts",
       "comment": "Persistence and user session management.",
-      "number_of_references": 56
+      "number_of_references": 62
     },
     {
       "tag": "shell",
@@ -442,7 +436,7 @@
       "tag": "telemetry",
       "scope": "Observability and OTEL",
       "comment": "Tracing, logging of tool results, exporters.",
-      "number_of_references": 32
+      "number_of_references": 33
     },
     {
       "tag": "telemetry-core",
@@ -454,7 +448,7 @@
       "tag": "testing",
       "scope": "Codex Unit and Integration Tests",
       "comment": "We use it for writing about the test infrastructure CLI, SDK and tools.",
-      "number_of_references": 135
+      "number_of_references": 136
     },
     {
       "tag": "testing-cli",
@@ -466,7 +460,7 @@
       "tag": "threads",
       "scope": "Threads and thread management",
       "comment": "We use it for an SDK that works with the Thread API and resume.",
-      "number_of_references": 7
+      "number_of_references": 8
     },
     {
       "tag": "tooling-core",
@@ -478,7 +472,7 @@
       "tag": "tools",
       "scope": "Implementation of tools",
       "comment": "Routing, registries, handlers and tool context.",
-      "number_of_references": 71
+      "number_of_references": 79
     },
     {
       "tag": "truncate",
@@ -490,7 +484,7 @@
       "tag": "tui",
       "scope": "TUI implementation",
       "comment": "A narrow tag for Ratatui application details, widgets, events.",
-      "number_of_references": 116
+      "number_of_references": 117
     },
     {
       "tag": "tui-bottom-pane",
@@ -502,7 +496,7 @@
       "tag": "tui-core",
       "scope": "Main runtime TUI",
       "comment": "Event loop, registry and orchestration of the chat widget that control the TUI loop.",
-      "number_of_references": 14
+      "number_of_references": 15
     },
     {
       "tag": "tui-rendering",
@@ -538,7 +532,7 @@
       "tag": "vt100",
       "scope": "Terminal vt100 scenarios",
       "comment": "Tests and render pipelines working with vt100 ports/emulation.",
-      "number_of_references": 11
+      "number_of_references": 10
     }
   ]
 }
